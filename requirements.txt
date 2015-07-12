@@ -1,0 +1,2 @@
+gallery-get==1.5.2
+praw==3.1.0
