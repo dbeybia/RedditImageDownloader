@@ -3,3 +3,4 @@ A beginner friendly, simple and effective image downloader for reddit, this tool
 
 # Installation
 * pip install -r requirements.txt
+* run get_pics.py
