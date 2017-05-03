@@ -3,11 +3,8 @@
 
 
 ''''
-A vert simple tool to grab images from a reddit subreddit.
-I've seen alternatives to this, and I've also seen tools that gets the job done more nicely
-but this is created for simplicity and minimalism, I wanted to create the simplest image downloader I can.
-
-Baha  @dbeybia
+A very simple tool to grab images from a reddit subreddit.
+by @dbeybia
 '''
 
 from __future__ import (absolute_import, division, print_function, unicode_literals)
@@ -18,7 +15,7 @@ import os
 
 
 
-USERAGENT = 'Image downloader by /u/medtn'
+USERAGENT = 'Image downloader by @dbeybia'
 SUBREDDIT = raw_input('Please enter the name of the subreddit: ')
 
 
@@ -39,7 +36,7 @@ print ('Starting download for subreddit :', SUBREDDIT, '\n')
 
 for submission in submissions:
 	try:
-		if 'imgur.com/a/' in submission.url: # launch the gallery_get module if this condition is true (if the link is an album)
+		if 'imgur.com/a/' in submission.url: # launch the gallery_get module if the link is an album
 				fullfilename = os.path.join(newpath, 'Picture - '+submission.id)
 				print ('> ' + submission.url)
 				gallery_get.run(submission.url)
